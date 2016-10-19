@@ -75,7 +75,7 @@ public class CoolWeatherDB {
                 new String[]{String.valueOf(provinceId)},null,null,null);
         if (cursor.moveToFirst()){
             do {
-                City city = new City;
+                City city = new City();
                 city.setId(cursor.getInt(cursor.getColumnIndex("id")));
                 city.setCityName(cursor.getString(cursor.getColumnIndex("city_name")));
                 city.setCityCode(cursor.getString(cursor.getColumnIndex("city_code")));
